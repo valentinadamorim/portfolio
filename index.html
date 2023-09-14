@@ -26,6 +26,24 @@
       <script src="https://kit.fontawesome.com/e17c241f8b.js" crossorigin="anonymous"></script>
     </head>
 <body>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '117168704811255',
+            xfbml      : true,
+            version    : 'v18.0'
+          });
+          FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "https://connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
       <header class="hero">
         <div class="container">
           <div class="row">
@@ -64,7 +82,19 @@
         </div>
       </header>
 
-      <section class="case-study">
+      <section class="portfolio-chapter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="heading purple">About <span class="purple">me</span></h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. In nibh mauris cursus mattis. Quisque non tellus orci ac auctor augue mauris augue. Amet dictum sit amet justo. Volutpat diam ut venenatis tellus in metus vulputate. Nulla posuere sollicitudin aliquam ultrices sagittis. Duis tristique sollicitudin nibh sit amet commodo nulla. Nunc pulvinar sapien et ligula ullamcorper. Nulla pharetra diam sit amet nisl suscipit adipiscing. Dictum varius duis at consectetur lorem donec massa sapien faucibus. Quisque egestas diam in arcu cursus euismod. Felis eget nunc lobortis mattis aliquam faucibus purus in. Convallis aenean et tortor at risus viverra adipiscing at. Neque vitae tempus quam pellentesque nec. Tortor pretium viverra suspendisse potenti.</p>
+              <p class="lead">Volutpat diam ut venenatis tellus in metus vulputate. Nulla posuere sollicitudin aliquam ultrices sagittis. Duis tristique sollicitudin nibh sit amet commodo nulla. Nunc pulvinar sapien et ligula ullamcorper. Nulla pharetra diam sit amet nisl suscipit adipiscing. Dictum varius duis at consectetur lorem donec massa sapien faucibus. Quisque egestas diam in arcu cursus euismod. Felis eget nunc lobortis mattis aliquam faucibus purus in. Convallis aenean et tortor at risus viverra adipiscing at. Neque vitae tempus quam pellentesque nec. Tortor pretium viverra suspendisse potenti.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-chapter">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -72,9 +102,9 @@
               <!-- Swiper -->
               <div class="swiper-container client-swiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide client-box">
-                    <img src="assets/logo-1.png" class="client-logo">
-                    <h3 class="text-left title">Jorge Alberto: Campaña de social media con influencers</h3>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/MNC_0125.jpg">
+                    <p class="lead text-left description">Descripcion 1</p>
                     <p class="text-left tag">Branding, UI, Website</p>
                     <ul class="social-links">
                       <li><a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
@@ -82,9 +112,9 @@
                       <li><a href="#"><i class="fa-brands fa-tiktok fa-xl"></i></a></li>
                     </ul>
                   </div>
-                  <div class="swiper-slide client-box">
-                    <img src="assets/logo-1.png" class="client-logo">
-                    <h3 class="text-left title">Grupo Resonancias: Campaña de comunicación promocional</h3>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/MNC_0179.jpg">
+                    <p class="lead text-left description">Descripcion 2</p>
                     <p class="text-left tag">Branding, UI, Website</p>
                     <ul class="social-links">
                       <li><a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
@@ -92,9 +122,9 @@
                       <li><a href="#"><i class="fa-brands fa-tiktok fa-xl"></i></a></li>
                     </ul>
                   </div>
-                  <div class="swiper-slide client-box">
-                    <img src="assets/logo-1.png" class="client-logo">
-                    <h3 class="text-left title">Campaña de branding Honda Resonancias</h3>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/MNC_0220.jpg">
+                    <p class="lead text-left description">Descripcion 3</p>
                     <p class="text-left tag">Branding, UI, Website</p>
                     <ul class="social-links">
                       <li><a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
@@ -102,9 +132,37 @@
                       <li><a href="#"><i class="fa-brands fa-tiktok fa-xl"></i></a></li>
                     </ul>
                   </div>
-                  <div class="swiper-slide client-box">
-                    <img src="assets/logo-1.png" class="client-logo">
-                    <h3 class="text-left title">Marketing digital para e-comerce motostore.ar</h3>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/Naranja-X.jpg">
+                    <p class="lead text-left description">Grupo Resonancias</p>
+                    <p class="text-left tag">Branding, UI, Website</p>
+                    <a href="https://www.instagram.com/reel/CrB4Tm1JN_3/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                      <i class="fa-brands fa-instagram fa-xl"></i>
+                    </a>
+                  </div>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/Naranja-X2_01.jpg">
+                    <p class="lead text-left description">Grupo Resonancias: Campaña de comunicación promocional</p>
+                    <p class="text-left tag">Branding, UI, Website</p>
+                    <ul class="social-links">
+                      <li><a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-tiktok fa-xl"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/Naranja-X2_03.jpg">
+                    <p class="lead text-left description">Campaña de branding Honda Resonancias</p>
+                    <p class="text-left tag">Branding, UI, Website</p>
+                    <ul class="social-links">
+                      <li><a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-tiktok fa-xl"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/Naranja-X2_04.jpg">
+                    <p class="lead text-left description">Marketing digital para e-comerce motostore.ar</p>
                     <p class="text-left tag">Branding, UI, Website</p>
                     <ul class="social-links">
                       <li><a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
@@ -140,12 +198,17 @@
         <div class="container-fluid">
           <div class="row footer">
             <div class="col-md-12 text-center">
-              <h1>Valen<br><span>D'amorim</span></h1>
+              <h1>Valen<br><span>D'Amorim</span></h1>
+            </div>
+            <div class="col-md-12 text-center">
               <ul class="social-links">
                 <li><a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #fff"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-linkedin fa-2xl" style="color: #fff"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-tiktok fa-2xl" style="color: #fff"></i></a></li>
               </ul>
+            </div>
+            <div class="col-md-12 text-center email-qr">
+              <img src="assets/email_qr.png">
             </div>
           </div>
           <div class="row sub-footer">

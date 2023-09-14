@@ -108,12 +108,13 @@ ul.social-links li a img {
 
 
 /* Case study */
-.case-study .col-md-12 {
+.portfolio-chapter .col-md-12 {
   transform: translateY(-80px);
   -webkit-transform: translateY(-80px);
   padding: 5em 3em;
   background-color: #fff;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
+  margin-bottom: 5em;
 }
 h4.sub-heading {
   text-transform: uppercase;
@@ -159,7 +160,7 @@ h1.heading.pink:after {
   background: #fff;
 }
 
-.client-box {
+.case-study {
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
   padding: 3.5em 2em;
@@ -170,24 +171,25 @@ h1.heading.pink:after {
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
-.client-box .client-logo {
+.case-study .client-logo {
   max-height: 120px;
 }
-.client-box h3.title {
+.case-study .description {
+  font-size: 18px;
   color: #4e4c58;
   margin-bottom: 2em;
 }
-.client-box p.tag {
+.case-study p.tag {
   color: #7447ae;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 1em;
 }
-.client-box a {
+.case-study a {
   color: #333;
   font-style: italic;
   opacity: 0.5;
 }
-.client-box.swiper-slide-next {
+.case-study.swiper-slide-next {
   -ms-transform: scale(1.15); /* IE 9 */
   -webkit-transform: scale(1.15); /* Safari */
   transform: scale(1.15);
@@ -303,7 +305,7 @@ h1.heading.pink:after {
   font-weight: 600;
   font-size: 3em;
   color: #a3a1ac;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .footer h1 span {
   color: #fff;
@@ -495,17 +497,17 @@ ul.main-nav.show-it {
   .testimonial {
     padding-top: 3rem;
   }
-  .case-study .col-md-12 {
+  .portfolio-chapter .col-md-12 {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .case-study .col-md-12 {
+  .portfolio-chapter .col-md-12 {
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
   }
 
   /*Swiper classes*/
-  .client-box.swiper-slide-next {
+  .case-study.swiper-slide-next {
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -518,7 +520,7 @@ ul.main-nav.show-it {
   .swiper-container {
     padding: 4em 0em;
   }
-  .client-box {
+  .case-study {
     padding: 1em;
     text-align: center;
   }
@@ -544,8 +546,7 @@ ul.main-nav.show-it {
   }
 }
 
-
-
-
-
-
+.email-qr img {
+    padding: 1em;
+    max-height: 10em;
+}
