@@ -26,25 +26,7 @@
       <script src="https://kit.fontawesome.com/e17c241f8b.js" crossorigin="anonymous"></script>
     </head>
 <body>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '117168704811255',
-            xfbml      : true,
-            version    : 'v18.0'
-          });
-          FB.AppEvents.logPageView();
-        };
-
-        (function(d, s, id){
-           var js, fjs = d.getElementsByTagName(s)[0];
-           if (d.getElementById(id)) {return;}
-           js = d.createElement(s); js.id = id;
-           js.src = "https://connect.facebook.net/en_US/sdk.js";
-           fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));
-      </script>
-      <header class="hero">
+      <header class="hero" id="home">
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-md-offset-6 col-xs-12">
@@ -61,13 +43,12 @@
                   </div>
                 </div>
                 <ul class="main-nav">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#" onclick="go_to('#home')">Home</a></li>
+                  <li><a href="#" onclick="go_to('#about')">About</a></li>
+                  <li><a href="#" onclick="go_to('#portfolio')">Portfolio</a></li>
+                  <li><a href="#" onclick="go_to('#contact')">Contact</a></li>
                 </ul>
               </nav>
-              <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
               <div class="hero-text">
                 <h1><span>Hi, I am</span><br>Valen.</h1>
                 <h3>Freelance designer from Buenos Aires</h3>
@@ -82,7 +63,7 @@
         </div>
       </header>
 
-      <section class="portfolio-chapter">
+      <section class="portfolio-chapter" id="about">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -94,7 +75,7 @@
         </div>
       </section>
 
-      <section class="portfolio-chapter">
+      <section class="portfolio-chapter" id="portfolio">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -182,7 +163,7 @@
       </section>
 
       <!-- Contact Banner -->
-      <section class="contact-banner">
+      <section class="contact-banner" id="contact">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
@@ -251,32 +232,6 @@
           }
         }
       });
-      // Initialize Testimonial Swiper
-      var swiper2 = new Swiper('.testimonial-swiper', {
-        slidesPerView: 3,
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        spaceBetween: 30,
-        grabCursor: true,
-        freeMode: true,
-        breakpoints: {
-          // when window width is <= 320px
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          // when window width is <= 480px
-          480: {
-            slidesPerView: 1,
-            spaceBetween: 10
-          },
-          // when window width is <= 640px
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 10
-          }
-        }
-      });
       </script>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
       <script src="js/jquery.counterup.min.js"></script>
@@ -287,6 +242,16 @@
         $(this).toggleClass('open'),
         $('.main-nav').toggleClass('show-it');
       })
+
+        // Scroller
+        function go_to(destination) {
+          console.log(destination)
+          $('html, body').animate({ scrollTop: $(destination).offset().top }, 500);
+        };
+
+        $(window).load(function () {
+          go_to("#home");
+        });
       </script>
     </body>
 </html>
