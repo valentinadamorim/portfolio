@@ -83,7 +83,7 @@
               <h1 class="heading purple"><span class="purple">Projects</span> <br>I've worked on</h1>
               <p class="lead">As a Social Media Manager and Community Manager, I was responsible for developing and implementing strategies to promote products and services, as well as enhancing brand positioning and branding across multiple industries.</p>
               <!-- Swiper -->
-              <div class="swiper-container client-swiper">
+              <div id="swipper_1" class="swiper-container client-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide case-study">
                     <blockquote
@@ -150,6 +150,65 @@ In this campaign I worked with a graphic designer and a paid media.</p>
         </div>
       </section>
 
+      <section class="portfolio-chapter" id="directions">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="heading purple"><span class="purple">Creative direction</span> <br> in audiovisual campaigns</h1>
+              <p class="lead">As a creative director, I had the opportunity to work on numerous campaigns with a skilled photographer. Our primary goal was to capture the essence of the lifestyle associated with the product we were promoting. This approach helped us create visually appealing content that resonated well with our target audience.</p>
+              <!-- Swiper -->
+              <div id="swipper_2" class="swiper-container client-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide case-study">
+                    <img src="assets/direccion_creativa_1.jpg">
+                    <p class="lead text-center description">Promotional communication</p>
+                    <p class="text-left tag">Branding, UI, Website</p>
+                  </div>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/direccion_creativa_2.jpg">
+                    <p class="lead text-center description">Promotional communication</p>
+                    <p class="text-left tag">Branding, UI, Website</p>
+                  </div>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/direccion_creativa_3.jpg">
+                    <p class="lead text-center description">Promotional communication</p>
+                    <p class="text-left tag">Branding, UI, Website</p>
+                  </div>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/direccion_creativa_4.jpg">
+                    <p class="lead text-center description">Promotional communication</p>
+                    <p class="text-left tag">Branding, UI, Website</p>
+                  </div>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/direccion_creativa_5.jpg">
+                    <p class="lead text-center description">Promotional communication</p>
+                    <p class="text-left tag">Branding, UI, Website</p>
+                  </div>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/direccion_creativa_6.jpg">
+                    <p class="lead text-center description">Promotional communication</p>
+                    <p class="text-left tag">Branding, UI, Website</p>
+                  </div>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/direccion_creativa_7.jpg">
+                    <p class="lead text-center description">Promotional communication</p>
+                    <p class="text-left tag">Branding, UI, Website</p>
+                  </div>
+                  <div class="swiper-slide case-study">
+                    <img src="assets/direccion_creativa_8.jpg">
+                    <p class="lead text-center description">Promotional communication</p>
+                    <p class="text-left tag">Branding, UI, Website</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Contact Banner -->
       <section class="contact-banner" id="contact">
         <div class="container">
@@ -194,7 +253,33 @@ In this campaign I worked with a graphic designer and a paid media.</p>
       <script src="js/swiper.jquery.min.js"></script>
       <!-- Initialize Client Swiper -->
       <script>
-      var swiper1 = new Swiper('.client-swiper', {
+      var swiper1 = new Swiper('#swipper_1', {
+        slidesPerView: 2,
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 60,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination'
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          }
+        }
+      });
+      var swiper2 = new Swiper('#swipper_2', {
         slidesPerView: 2,
         paginationClickable: true,
         nextButton: '.swiper-button-next',
@@ -233,13 +318,8 @@ In this campaign I worked with a graphic designer and a paid media.</p>
 
         // Scroller
         function go_to(destination) {
-          console.log(destination)
           $('html, body').animate({ scrollTop: $(destination).offset().top }, 500);
         };
-
-        $(window).load(function () {
-          go_to("#home");
-        });
       </script>
     </body>
 </html>
