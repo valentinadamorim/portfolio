@@ -253,7 +253,31 @@ In this campaign I worked with a graphic designer and a paid media.</p>
           </div>
         </div>
       </section>
-  
+
+  <section class="portfolio-chapter" id="directions">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="heading purple"><span class="purple">Personal</span> <br> posts</h1>
+              <!-- Swiper -->
+                  <div class="swiper-slide case-study">
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7021858673228423168" height="1800" width="504" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>                    <p class="text-left tag">Branding, Social Media, Content creation</p>
+                  </div>
+                  <div class="swiper-slide case-study">
+                   <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@mktdigitalconvalen/video/7142916987704855813" data-video-id="7142916987704855813" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@mktdigitalconvalen" href="https://www.tiktok.com/@mktdigitalconvalen?refer=embed">@mktdigitalconvalen</a> Dejame en comentarios que tema te gustaría que explique ❤️ <a title="marketingdigital" target="_blank" href="https://www.tiktok.com/tag/marketingdigital?refer=embed">#marketingdigital</a> <a title="estrategiasdemarketingdigital" target="_blank" href="https://www.tiktok.com/tag/estrategiasdemarketingdigital?refer=embed">#estrategiasdemarketingdigital</a> <a title="estrategiasdemercadeo" target="_blank" href="https://www.tiktok.com/tag/estrategiasdemercadeo?refer=embed">#estrategiasdemercadeo</a> <a title="ventasonline" target="_blank" href="https://www.tiktok.com/tag/ventasonline?refer=embed">#ventasonline</a> <a title="estrategiademarca" target="_blank" href="https://www.tiktok.com/tag/estrategiademarca?refer=embed">#estrategiademarca</a> <a target="_blank" title="♬ sonido original - Valentina🌻 |Estratega Digital" href="https://www.tiktok.com/music/sonido-original-7142917004081040133?refer=embed">♬ sonido original - Valentina🌻 |Estratega Digital</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                  </div>
+                  <div class="swiper-slide case-study">
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7023291759543623680" height="502" width="504" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>                    <p class="lead text-center description">Comercial newsletter</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Contact Banner -->
       <section class="contact-banner" id="contact">
         <div class="container">
@@ -351,6 +375,32 @@ In this campaign I worked with a graphic designer and a paid media.</p>
         }
       });
       var swiper3 = new Swiper('#swipper_3', {
+        slidesPerView: 2,
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 60,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination'
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          }
+        }
+      });
+              var swiper4 = new Swiper('#swipper_4', {
         slidesPerView: 2,
         paginationClickable: true,
         nextButton: '.swiper-button-next',
