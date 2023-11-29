@@ -371,6 +371,32 @@ In this campaign I worked with a graphic designer and a paid media.</p>
           }
         }
       });
+      var swiper3 = new Swiper('#swipper_2', {
+        slidesPerView: 2,
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 60,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination'
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          }
+        }
+      });
       </script>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
       <script src="js/jquery.counterup.min.js"></script>
