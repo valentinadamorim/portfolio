@@ -105,8 +105,9 @@ ul.social-links li a:hover {
 ul.social-links li a img {
   max-height: 30px;
 }
-
-
+ul.dropdown-menu img {
+  max-width: 22%;
+}
 /* Case study */
 .portfolio-chapter .col-md-12 {
   transform: translateY(-80px);
@@ -453,6 +454,10 @@ ul.main-nav.show-it {
   transition-delay: .25s;
 }
 
+ul.main-nav ul.dropdown-menu {
+
+  background-color: transparent;
+}
 
 
 
