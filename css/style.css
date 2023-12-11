@@ -295,6 +295,15 @@ h1.heading.pink:after {
   margin-top: 0;
   margin-bottom: 1em;
 }
+div.share-rrss {
+  font-family: 'Montserrat', sans-serif;
+  color: #a3a1ac;
+  font-weight: 300;
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
 
 
 /* Footer */
